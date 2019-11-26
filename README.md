@@ -26,15 +26,14 @@ This may come from:
 - b
 - c
 
-<table><tbody><tr><th align="left" bgcolor=#f8f8f8> </th> <td bgcolor=white> darknet weights </td><td bgcolor=white> darknet repo </td><td bgcolor=white> Ours (pytorch) </td><td bgcolor=white> Ours (pytorch) </td></tr>
-<tr><th align="left" bgcolor=#f8f8f8> batchsize </th> <td bgcolor=white> ?? </td><td bgcolor=white> 4 </td><td bgcolor=white> 4 </td> <td bgcolor=white> 8 </td> </tr>
-<tr><th align="left" bgcolor=#f8f8f8> speed [iter/min](*) </th> <td bgcolor=white> ?? </td><td bgcolor=white> <b>19.2</b> </td><td bgcolor=white> <b>19.4</b> </td> <td bgcolor=white> 21.0 </td> </tr>
-<tr><th align="left" bgcolor=#f8f8f8> COCO AP[IoU=0.50:0.95], training</th> <td bgcolor=white> 0.302 </td><td bgcolor=white> <b>0.278</b> </td> <td bgcolor=white> <b>0.277</b> </td> <td bgcolor=white> 0.292 </td> </tr>
-<tr><th align="left" bgcolor=#f8f8f8> COCO AP[IoU=0.50],      training</th> <td bgcolor=white> 0.544 </td><td bgcolor=white> <b>0.476</b> </td> <td bgcolor=white> <b>0.478</b> </td> <td bgcolor=white> 0.500 </td> </tr>
-</table></tbody>
-(*) measured on Tesla V100
+|                         | YOLOv3 (darknet repo) | YOLOv3 (our repo) | Gaussian YOLOv3 (our repo) |
+|-------------------------|-----------------------|-------------------|----------------------------|
+| COCO AP [IoU=0.50:0.95] | 0.278                 | 0.277             | **0.304**                  |
+| COCO AP [IoU=0.50]      | 0.476                 | 0.478             | **0.467**                  |
 
 <p align="left"><img src="data/gaussian_yolov3/val2017_comparison.png" height="500"\>
+
+Training configurations used in our repo can be found under [config dir](./config).
 
 ## Installation
 #### Requirements
@@ -45,7 +44,8 @@ This may come from:
 - Matplotlib
 - Pytorch 1.0.0+ (verified as operable: v0.4.0, v1.0.0)
 - Cython (verified as operable: v0.29.1)
-- [pycocotools](https://pypi.org/project/pycocotools/) (verified as operable: v2.0.0) 
+- [pycocotools](https://pypi.org/project/pycocotools/) (verified as operable: v2.0.0)
+- seaborn (verified as operable: v0.9.0)
 - Cuda (verified as operable: v9.0)
 
 optional:
