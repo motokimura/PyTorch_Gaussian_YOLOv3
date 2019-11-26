@@ -27,7 +27,7 @@ Accordingo to the benchmark,
 **Gaussian YOLOv3 implemented in our repo achieved 30.4% in COCO AP[IoU=0.50:0.95]**, which is
 2.6 ~ 2.7 point higher than the score of YOLOv3 implemented in darknet and our repo.
 
-This gain is smaller than 3.1, the gain reported in the Gaussian YOLOv3 paper.
+This gain is smaller than the one reported in the Gaussian YOLOv3 paper (3.1 point).
 This may come from:
 - absence of `sigma_const`: Gaussian YOLOv3 official repo uses a hyper parameter `sigma_const` as an offset for uncertainties to predict but we do not use it
 - gradient clipping: we use gradient clipping technique to avoid divergence during training
