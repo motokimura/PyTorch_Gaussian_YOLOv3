@@ -22,9 +22,9 @@ Accordingo to the benchmark,
 
 This gain is smaller than 3.1, the gain reported in the Gaussian YOLOv3 paper.
 This may come from:
-- a
-- b
-- c
+- absence of `sigma_const`: Gaussian YOLOv3 official repo uses a hyper parameter `sigma_const` as an offset for uncertainties to predict but we do not use it
+- gradient clipping: we use gradient clipping technique to avoid divergence during training
+- difference of hyper parameters: official repo does not contain hyper parameters for COCO
 
 |                         | YOLOv3 (darknet repo) | YOLOv3 (our repo) | Gaussian YOLOv3 (our repo) |
 |-------------------------|-----------------------|-------------------|----------------------------|
