@@ -71,12 +71,15 @@ docker@4d69df209f4a:/work$ python train.py --help
 #### Download pretrained weights
 download Gaussian YOLOv3 pretrained weight from [our GoogleDrive](https://drive.google.com/open?id=1zAFDSga9XLrsUBNHV3S2SvL1YWEsDB_p).
 
-Open [demo.ipynb](./demo.ipynb), specify the path to the pretrained weight downloaded, and run it!
+#### Inference with jupyter notebook
+see [demo.ipynb](./demo.ipynb).
+
+Make sure you specify the path to the pretrained weight correctly in the notebook.
 
 ## Train
 
 #### Download pretrained weights
-download Darknet53 pretrained file from the author's project page:   
+download Darknet53 pretrained weights from the author's project page:   
 
 ```bash
 $ mkdir weights
