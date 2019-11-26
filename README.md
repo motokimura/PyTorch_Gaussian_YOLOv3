@@ -1,7 +1,13 @@
-# YOLOv3 in Pytorch
-Pytorch implementation of YOLOv3
+# Gaussian YOLOv3 in Pytorch
+Pytorch implementation of Gaussian YOLOv3
 
-<p align="left"><img src="data/innsbruck_result.png" height="160"\>  <img src="data/mountain_result.png" height="160"\></p>
+<p align="left">
+  <img src="data/gaussian_yolov3/traffic_1_result.png" height="270"\>
+  <img src="data/gaussian_yolov3/traffic_5_result.png" height="270"\>
+  <img src="data/gaussian_yolov3/traffic_2_result.png" height="270"\>
+  <img src="data/gaussian_yolov3/traffic_4_result.png" height="280"\>
+  <img src="data/gaussian_yolov3/traffic_3_result.png" height="280"\>
+</p>
 
 ## What's New
 - **19/05/05 We have verified that our repo exactly reproduces darknet's training using the default configuration, with COCO AP ~= 0.277 on train / val2017.**
