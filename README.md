@@ -16,22 +16,22 @@ Pytorch implementation of [Gaussian YOLOv3](https://arxiv.org/abs/1904.04620)
 
 The benchmark results below have been obtained by training models for 500k iterations on the COCO 2017 train dataset using darknet repo and our repo.
 
+Accordingo to the benchmark, 
+**Gaussian YOLOv3 implemented in our repo achieved 30.4% in COCO AP[IoU=0.50:0.95]**, which is
+2.6 ~ 2.7 point higher than the score of YOLOv3 implemented in darknet and our repo.
+
+This gain is smaller than 3.1, the one reported in the Gaussian YOLOv3 paper.
+This may come from:
+- absence of `sigma_const`: Gaussian YOLOv3 official repo uses a hyper parameter `sigma_const` as an offset for uncertainties to predict but we do not use it
+- gradient clipping: we use gradient clipping technique to avoid divergence during training
+- difference of hyper parameters: official repo does not contain hyper parameters for COCO
+
 |                         | YOLOv3 (darknet repo) | YOLOv3 (our repo) | Gaussian YOLOv3 (our repo) |
 |-------------------------|-----------------------|-------------------|----------------------------|
 | COCO AP [IoU=0.50:0.95] | 0.278                 | 0.277             | **0.304**                  |
 | COCO AP [IoU=0.50]      | 0.476                 | 0.478             | **0.467**                  |
 
 <p align="left"><img src="data/gaussian_yolov3/val2017_comparison.png" height="500"\>
-
-Accordingo to the benchmark, 
-**Gaussian YOLOv3 implemented in our repo achieved 30.4% in COCO AP[IoU=0.50:0.95]**, which is
-2.6 ~ 2.7 point higher than the score of YOLOv3 implemented in darknet and our repo.
-
-This gain is smaller than the one reported in the Gaussian YOLOv3 paper (3.1 point).
-This may come from:
-- absence of `sigma_const`: Gaussian YOLOv3 official repo uses a hyper parameter `sigma_const` as an offset for uncertainties to predict but we do not use it
-- gradient clipping: we use gradient clipping technique to avoid divergence during training
-- difference of hyper parameters: official repo does not contain hyper parameters for COCO
 
 Training configurations used in our repo can be found under [config dir](./config).
 
