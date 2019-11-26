@@ -1,4 +1,4 @@
-# Gaussian YOLOv3 in Pytorch
+# Gaussian YOLOv3 in PyTorch
 Pytorch implementation of Gaussian YOLOv3
 
 <p align="left">
