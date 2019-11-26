@@ -118,10 +118,12 @@ optional arguments:
   --debug               debug mode where only one image is trained
   --tfboard TFBOARD     tensorboard path for logging
 ```
+
 example:   
 ```bash
 $ python train.py --cfg config/gaussian_yolov3_default.cfg --weights_path weights/darknet53.conv.74 --tfboard log
 ```
+
 The train configuration is written in yaml files located in config folder.
 We use the following format:
 ```yaml
@@ -170,18 +172,18 @@ $ python train.py --cfg config/gaussian_yolov3_eval.cfg --eval_interval 1 [--ckp
 ```
 
 ## Paper
-### YOLOv3: An Incremental Improvement
-_Joseph Redmon, Ali Farhadi_ <br>
+### Gaussian YOLOv3: An Accurate and Fast Object Detector Using Localization Uncertainty for Autonomous Driving
+_Jiwoong Choi, Dayoung Chun, Hyun Kim, Hyuk-Jae Lee_ <br>
 
-[[Paper]](https://pjreddie.com/media/files/papers/YOLOv3.pdf) [[Original Implementation]](https://github.com/pjreddie/darknet)
-[[Author's Project Page]](https://pjreddie.com/darknet/yolo/)  
+[[Paper]](https://arxiv.org/abs/1904.04620) [[Original Implementation]](https://github.com/jwchoi384/Gaussian_YOLOv3)
 
 ## Credit
 ```
-@article{yolov3,
-  title={YOLOv3: An Incremental Improvement},
-  author={Redmon, Joseph and Farhadi, Ali},
-  journal = {arXiv},
-  year={2018}
+@InProceedings{Choi_2019_ICCV,
+author = {Choi, Jiwoong and Chun, Dayoung and Kim, Hyun and Lee, Hyuk-Jae},
+title = {Gaussian YOLOv3: An Accurate and Fast Object Detector Using Localization Uncertainty for Autonomous Driving},
+booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+month = {October},
+year = {2019}
 }
 ```
