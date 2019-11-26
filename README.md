@@ -172,10 +172,10 @@ $ python train.py --cfg config/gaussian_yolov3_eval.cfg --eval_interval 1 [--ckp
 ```
 
 ## Paper
-### Gaussian YOLOv3: An Accurate and Fast Object Detector Using Localization Uncertainty for Autonomous Driving
+#### Gaussian YOLOv3: An Accurate and Fast Object Detector Using Localization Uncertainty for Autonomous Driving
 _Jiwoong Choi, Dayoung Chun, Hyun Kim, Hyuk-Jae Lee_ <br>
 
-[[Paper]](https://arxiv.org/abs/1904.04620) [[Original Implementation]](https://github.com/jwchoi384/Gaussian_YOLOv3)
+[[Paper]](https://arxiv.org/abs/1904.04620) [[Author's Implementation]](https://github.com/jwchoi384/Gaussian_YOLOv3)
 
 ## Credit
 ```
