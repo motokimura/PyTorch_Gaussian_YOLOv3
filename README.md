@@ -2,11 +2,14 @@
 Pytorch implementation of Gaussian YOLOv3
 
 <p align="left">
-  <img src="data/gaussian_yolov3/traffic_1_result.png" height="270"\>
-  <img src="data/gaussian_yolov3/traffic_5_result.png" height="270"\>
-  <img src="data/gaussian_yolov3/traffic_2_result.png" height="270"\>
-  <img src="data/gaussian_yolov3/traffic_4_result.png" height="280"\>
-  <img src="data/gaussian_yolov3/traffic_3_result.png" height="280"\>
+  <img src="data/gaussian_yolov3/traffic_1_result.png" height="260"\>
+  <img src="data/gaussian_yolov3/traffic_5_result.png" height="260"\>
+  <img src="data/gaussian_yolov3/traffic_2_result.png" height="260"\>
+</p>
+
+<p align="left">
+  <img src="data/gaussian_yolov3/traffic_4_result.png" height="265"\>
+  <img src="data/gaussian_yolov3/traffic_3_result.png" height="265"\>
 </p>
 
 ## What's New
