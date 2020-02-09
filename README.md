@@ -80,11 +80,12 @@ and uncertainties of box center coordinates are visualized by crossed lines insi
 
 ![](data/gaussian_yolov3/traffic_1_result.png)
 
-The more occlusions are added, predicted uncertainties get higher as you can see below:
+As you can see in the simple experiments below, 
+predicted uncertainties get higher as the more occlusions are added.
 
 ![](data/gaussian_yolov3/car_with_occlusions.gif)
 
-In examples above, 2-sigma confidence intervals are visualized.
+In all examples above, 2-sigma confidence intervals are visualized.
 
 ## Training
 
