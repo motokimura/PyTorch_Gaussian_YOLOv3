@@ -112,7 +112,7 @@ usage: train.py [-h] [--cfg CFG] [--weights_path WEIGHTS_PATH] [--n_cpu N_CPU]
                 [--checkpoint_interval CHECKPOINT_INTERVAL]
                 [--eval_interval EVAL_INTERVAL] [--checkpoint CHECKPOINT]
                 [--checkpoint_dir CHECKPOINT_DIR] [--use_cuda USE_CUDA]
-                [--debug] [--tfboard TFBOARD]
+                [--debug] [--tfboard_dir TFBOARD_DIR]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -130,12 +130,12 @@ optional arguments:
                         directory where checkpoint files are saved
   --use_cuda USE_CUDA
   --debug               debug mode where only one image is trained
-  --tfboard TFBOARD     tensorboard path for logging
+  --tfboard_dir TFBOARD_DIR     tensorboard path for logging
 ```
 
 example:   
 ```bash
-$ python train.py --cfg config/gaussian_yolov3_default.cfg --weights_path weights/darknet53.conv.74 --tfboard log
+$ python train.py --cfg config/gaussian_yolov3_default.cfg --weights_path weights/darknet53.conv.74 --tfboard_dir ./log
 ```
 
 The train configuration is written in yaml files located in config folder.
